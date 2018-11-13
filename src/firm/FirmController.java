@@ -9,10 +9,14 @@ public class FirmController {
     /*
     ---------------------------------- Fields ----------------------------------
      */
+    private FirmList firmList;
 
     /*
     ------------------------------ Constructors --------------------------------
      */
+    public FirmController () {
+        firmList = new FirmList();
+    }
 
     /*
     ------------------------------ Properties ----------------------------------
@@ -21,6 +25,19 @@ public class FirmController {
     /*
     ---------------------------- Public Methods --------------------------------
      */
+
+    /**
+     *
+     * @return
+     */
+    public int getNoOfFirms() {
+
+        // Get the size of the firmList
+        int total = firmList.getFirmList().size();
+
+        // Return the amount of teams in the firmList
+        return total;
+    }
 
     /*
     ----------------------------- Support Methods ------------------------------

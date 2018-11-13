@@ -20,12 +20,17 @@ public class FirmList {
     /**
      * Primary Constructor
      */
-    FirmList () { }
+    FirmList () {
+        firmList = new ArrayList<>();
+    }
 
     /*
     ------------------------------ Properties ----------------------------------
      */
 
+    public ArrayList<Firm> getFirmList() {
+        return firmList;
+    }
     /*
     ---------------------------- Public Methods --------------------------------
      */
