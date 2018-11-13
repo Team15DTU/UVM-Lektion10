@@ -22,15 +22,20 @@ public class Team {
      */
 
     public Team (String name) {
+
         this.name=name;
         teamID=teamCounter;
+
         teamCounter++;
     }
 
     public Team(String name, String firmID) {
+
         this.name=name;
         teamID=teamCounter;
         this.firmID=firmID;
+
+        teamCounter++;
     }
 
     public Team (String name, int capID, String firmID) {

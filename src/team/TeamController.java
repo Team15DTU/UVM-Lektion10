@@ -42,7 +42,19 @@ public class TeamController {
 
     }
 
-    public void addTeam () {
+    public void addTeam (String teamName, String CVR) {
+
+        Team team = new Team(teamName,CVR);
+
+        teamList.addTeam(team);
+
+    }
+
+    public void addTeam (String teamName, int captainMenberID, String CVR) {
+
+        Team team = new Team(teamName,captainMenberID,CVR);
+
+        teamList.addTeam(team);
 
     }
     
