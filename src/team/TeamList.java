@@ -12,25 +12,29 @@ public class TeamList {
     -------------------------- Fields --------------------------
      */
     
-    ArrayList<Team>
+    ArrayList<Team> teamlist;
     
     /*
     ----------------------- Constructor -------------------------
      */
     
-    
+    public TeamList () {
+
+    }
     
     /*
     ------------------------ Properties -------------------------
      */
-    
-    
+
+    public ArrayList<Team> getTeamlist() {
+        return teamlist;
+    }
     
     /*
     ---------------------- Public Methods -----------------------
      */
-    
-    
+
+
     
     /*
     ---------------------- Support Methods ----------------------

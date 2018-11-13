@@ -10,7 +10,7 @@ public class TeamController {
     -------------------------- Fields --------------------------
      */
 
-    private int
+    private TeamList teamList;
     
     /*
     ----------------------- Constructor -------------------------
@@ -21,13 +21,19 @@ public class TeamController {
     /*
     ------------------------ Properties -------------------------
      */
-    
-    
-    
+
+
+
     /*
     ---------------------- Public Methods -----------------------
      */
-    
+
+    public int getNoOfTeams () {
+
+        // Gets size of TeamList.
+        return teamList.getTeamlist().size();
+    }
+
     
     
     /*
