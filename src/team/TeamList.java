@@ -20,6 +20,8 @@ public class TeamList {
     
     public TeamList () {
 
+        teamlist = new ArrayList<>();
+
     }
     
     /*
@@ -34,7 +36,11 @@ public class TeamList {
     ---------------------- Public Methods -----------------------
      */
 
+    void addTeam(Team team) {
 
+        teamlist.add(team);
+
+    }
     
     /*
     ---------------------- Support Methods ----------------------
