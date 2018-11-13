@@ -15,6 +15,7 @@ public class Team {
     private int capID;
     private String firmID;
     private static int teamCounter = 1;
+    private boolean isValid = false;
 
 
     /*

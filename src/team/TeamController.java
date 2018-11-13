@@ -15,8 +15,10 @@ public class TeamController {
     /*
     ----------------------- Constructor -------------------------
      */
-    
-    
+
+    public TeamController () {
+        teamList = new TeamList();
+    }
     
     /*
     ------------------------ Properties -------------------------
@@ -50,11 +52,28 @@ public class TeamController {
 
     }
 
-    public void addTeam (String teamName, int captainMenberID, String CVR) {
+    public void addTeam (String teamName, int captainMemberID, String CVR) {
 
-        Team team = new Team(teamName,captainMenberID,CVR);
+        Team team = new Team(teamName,captainMemberID,CVR);
 
         teamList.addTeam(team);
+
+    }
+
+    public void setCaptain (int memberID, int teamID) {
+
+        for( Team t: teamList.getTeamlist()) {
+
+
+            if (t.getTeamID() == teamID) {
+                t.setCapID(memberID);
+                break;
+            }
+        }
+
+    }
+
+    public void isValid (int teamID) {
 
     }
     
