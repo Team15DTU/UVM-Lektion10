@@ -5,17 +5,29 @@ import java.util.ArrayList;
 public class Member {
 
     /*
-    ----------- Construcktor -----------
+    ----------- Attributes -----------
     */
 
 
     private String name;
     private String mail;
-    private ArrayList<> adminTeams;
+    private ArrayList<teamID> adminTeams = new ArrayList();
     private int teamID;
     private int memberNo;
 
+    /*
+    ----------- Construcktor -----------
+    */
 
+    public Member(String name, String mail, ArrayList<teamID> adminTeams,int teamID,int memberNo) {
+
+        this.name = name;
+        this.mail = mail;
+        this.adminTeams = adminTeams;
+        this.teamID = teamID;
+        this.memberNo = memberNo;
+
+    }
 
 
 
