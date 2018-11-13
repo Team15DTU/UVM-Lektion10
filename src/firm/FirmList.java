@@ -11,7 +11,7 @@ public class FirmList {
     /*
     ---------------------------------- Fields ----------------------------------
      */
-    ArrayList<Firm> firmList;
+    private ArrayList<Firm> firmList;
 
     /*
     ------------------------------ Constructors --------------------------------
