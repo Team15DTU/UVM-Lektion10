@@ -24,12 +24,6 @@ public class MemberController {
     }
 
 
-    public void addMemberToTeam(int teamID) {
-
-        
-
-    }
-
 
     /*
     ----------- Getter and setter -----------

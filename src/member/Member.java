@@ -33,11 +33,11 @@ public class Member {
     ----------- methods -----------
     */
 
-    public addAdmin(teamID) {
+    public void addAdmin(int teamID) {
         adminTeams.add(teamID);
     }
 
-    public addToTeam(int teamID) {
+    public void addToTeam(int teamID) {
         this.teamID = teamID;
     }
 

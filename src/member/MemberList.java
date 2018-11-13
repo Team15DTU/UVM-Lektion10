@@ -13,5 +13,12 @@ public class MemberList {
 
     }
 
+    public Member fromList (int i) {
+        Member member = members.get(i);
+        return member;
+    }
+
+
+
 
 }
