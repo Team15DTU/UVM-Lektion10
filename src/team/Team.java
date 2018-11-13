@@ -29,6 +29,7 @@ public class Team {
 
         this.name=name;
         teamID=teamCounter;
+        teamMembers = new ArrayList<>();
 
         teamCounter++;
     }
@@ -38,6 +39,7 @@ public class Team {
         this.name=name;
         teamID=teamCounter;
         this.firmID=firmID;
+        teamMembers = new ArrayList<>();
 
         teamCounter++;
     }
@@ -48,6 +50,7 @@ public class Team {
         teamID=teamCounter;
         this.capID=capID;
         this.firmID=firmID;
+        teamMembers = new ArrayList<>();
 
         teamCounter++;
     }
@@ -104,16 +107,19 @@ public class Team {
         isValid = valid;
     }
 
+
     /*
     ---------------------- Public Methods -----------------------
      */
 
+    public void addMemberToTeam (int memberID) {
 
+        teamMembers.add(memberID);
+    }
 
     /*
     ---------------------- Support Methods ----------------------
      */
-
 
 
 

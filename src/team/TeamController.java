@@ -76,13 +76,45 @@ public class TeamController {
     public void addMemberToTeam (int memberID, int teamID) {
         for (Team t: teamList.getTeamlist()) {
 
-            if (t.ge)
+            if (t.getTeamID() == (teamID)) {
+                t.addMemberToTeam(memberID);
+            }
+        }
+    }
+
+    public void isTeamValid (int teamID) {
+
+        updateTeamValidation(teamID);
+
+        for (Team t : teamList.getTeamlist()) {
+            if (t.getTeamID() == teamID && t.isValid()) {
+                if (t.isValid()) {
+                    System.out.println("This team is valid");
+                } else {
+                    System.out.println("This team is not valid");
+                }
+            }
         }
     }
     
     /*
     ---------------------- Support Methods ----------------------
      */
+
+    public void updateTeamValidation (int teamID) {
+
+        for (Team t: teamList.getTeamlist()) {
+            int numberOfTeammembers = t.getTeamMembers().size();
+            if (t.getTeamID() == teamID) {
+                if (numberOfTeammembers>=4 && numberOfTeammembers<=12) {
+                    t.setValid(true);
+
+                } else {
+                    t.setValid(false);
+                }
+            }
+        }
+    }
 
 
 }
