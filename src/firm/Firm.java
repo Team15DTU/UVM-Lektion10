@@ -11,8 +11,8 @@ public class Firm {
     /*
     ---------------------------------- Fields ----------------------------------
      */
-    String name, cvr;
-    ArrayList<Team> teams;
+    private String name, cvr;
+    private ArrayList<Integer> teams;
 
     /*
     ------------------------------- Constructors -------------------------------
@@ -27,7 +27,7 @@ public class Firm {
         // Initialize variables
         this.name = name;
         this.cvr = cvr;
-        teams = new ArrayList<Team>();
+        teams = new ArrayList<>();
     }
 
     /*
@@ -50,16 +50,27 @@ public class Firm {
         this.cvr = cvr;
     }
 
-    public ArrayList<Team> getTeams() {
+    public ArrayList<Integer> getTeams() {
         return teams;
     }
 
-    public void setTeams(ArrayList<Team> teams) {
+    public void setTeams(ArrayList<Integer> teams) {
         this.teams = teams;
     }
+
     /*
     ---------------------------- Public Methods --------------------------------
      */
+
+    /**
+     * This methods adds a teams ID to the list of associated teams
+     * @param teamID The Team ID as an int
+     */
+    public void addTeam (int teamID) {
+
+        // Add the teamID to the teams List
+        teams.add(teamID);
+    }
 
     /*
     ----------------------------- Support Methods ------------------------------
