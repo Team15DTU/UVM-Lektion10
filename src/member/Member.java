@@ -11,7 +11,7 @@ public class Member {
 
     private String name;
     private String mail;
-    private ArrayList<teamID> adminTeams = new ArrayList();
+    private ArrayList<Integer> adminTeams;
     private int teamID;
     private int memberNo;
 
@@ -19,14 +19,26 @@ public class Member {
     ----------- Construcktor -----------
     */
 
-    public Member(String name, String mail, ArrayList<teamID> adminTeams,int teamID,int memberNo) {
+    public Member(String name, String mail, int memberNo) {
 
         this.name = name;
         this.mail = mail;
-        this.adminTeams = adminTeams;
-        this.teamID = teamID;
         this.memberNo = memberNo;
+        adminTeams = new ArrayList<>();
 
+    }
+
+
+    /*
+    ----------- methods -----------
+    */
+
+    public addAdmin(teamID) {
+        adminTeams.add(teamID)
+    }
+
+    public addToTeam(int teamID) {
+        this.teamID = teamID;
     }
 
 
