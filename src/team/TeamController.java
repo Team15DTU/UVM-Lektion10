@@ -73,8 +73,11 @@ public class TeamController {
 
     }
 
-    public void isValid (int teamID) {
+    public void addMemberToTeam (int memberID, int teamID) {
+        for (Team t: teamList.getTeamlist()) {
 
+            if (t.ge)
+        }
     }
     
     /*

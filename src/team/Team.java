@@ -1,5 +1,7 @@
 package team;
 
+import java.util.ArrayList;
+
 /**
  * @auther Rasmus Sander Larsen
  * @date 13-11-2018
@@ -15,6 +17,7 @@ public class Team {
     private int capID;
     private String firmID;
     private static int teamCounter = 1;
+    private ArrayList<Integer> teamMembers;
     private boolean isValid = false;
 
 
@@ -85,7 +88,23 @@ public class Team {
         this.firmID = firmID;
     }
 
-/*
+    public ArrayList<Integer> getTeamMembers() {
+        return teamMembers;
+    }
+
+    public void setTeamMembers(ArrayList<Integer> teamMembers) {
+        this.teamMembers = teamMembers;
+    }
+
+    public boolean isValid() {
+        return isValid;
+    }
+
+    public void setValid(boolean valid) {
+        isValid = valid;
+    }
+
+    /*
     ---------------------- Public Methods -----------------------
      */
 
