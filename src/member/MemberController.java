@@ -7,7 +7,7 @@ public class MemberController {
     ----------- Construcktor -----------
     */
     private int noOfMembers = 0;
-    Member member = new Member();
+    Member member;
     MemberList memberList = new MemberList();
 
 
@@ -15,12 +15,10 @@ public class MemberController {
     /*
     ----------- Methods -----------
     */
-    public void createMember(String mail, String name) {
+    public void createMember(String name, String mail) {
 
-        member.setMail(mail);
-        member.setName(name);
-        member.setMemberNo(getNoOfMembers());
-        memberList.addToList();
+        member = new Member(name, mail, getNoOfMembers());
+        memberList.addToList(name, mail, getNoOfMembers());
 
         setNoOfMembers(getNoOfMembers()+1);
     }
@@ -28,7 +26,7 @@ public class MemberController {
 
     public void addMemberToTeam(int teamID) {
 
-        member.setTeamID(teamID);
+        
 
     }
 

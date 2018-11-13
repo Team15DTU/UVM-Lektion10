@@ -7,9 +7,9 @@ public class MemberList {
 
     ArrayList<Member> members = new ArrayList();
 
-    public void addToList() {
+    public void addToList(String name, String mail, int memberNo) {
 
-        members.add(new Member());
+        members.add(new Member(name, mail, memberNo));
 
     }
 

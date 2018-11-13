@@ -34,7 +34,7 @@ public class Member {
     */
 
     public addAdmin(teamID) {
-        adminTeams.add(teamID)
+        adminTeams.add(teamID);
     }
 
     public addToTeam(int teamID) {
