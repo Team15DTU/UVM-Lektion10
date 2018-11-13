@@ -21,6 +21,18 @@ public class Team {
     ----------------------- Constructor -------------------------
      */
 
+    public Team (String name) {
+        this.name=name;
+        teamID=teamCounter;
+        teamCounter++;
+    }
+
+    public Team(String name, String firmID) {
+        this.name=name;
+        teamID=teamCounter;
+        this.firmID=firmID;
+    }
+
     public Team (String name, int capID, String firmID) {
 
         this.name=name;

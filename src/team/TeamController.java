@@ -34,7 +34,9 @@ public class TeamController {
         return teamList.getTeamlist().size();
     }
 
-    
+    public void addTeam (String teamName, int ) {
+
+    }
     
     /*
     ---------------------- Support Methods ----------------------
