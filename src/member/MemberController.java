@@ -3,13 +3,18 @@ package member;
 public class MemberController {
 
 
-    //construcktor
+    /*
+    ----------- Construcktor -----------
+    */
     private int noOfMembers = 0;
     Member member = new Member();
     MemberList memberList = new MemberList();
 
 
-    //methods
+
+    /*
+    ----------- Methods -----------
+    */
     public void createMember(String mail, String name) {
 
         member.setMail(mail);
@@ -28,7 +33,9 @@ public class MemberController {
     }
 
 
-    //getter and setter
+    /*
+    ----------- Getter and setter -----------
+     */
     public int getNoOfMembers() {
         return noOfMembers;
     }

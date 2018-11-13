@@ -4,7 +4,9 @@ import java.util.ArrayList;
 
 public class Member {
 
-    //construcktor
+    /*
+    ----------- Construcktor -----------
+    */
 
 
     private String name;
@@ -17,7 +19,9 @@ public class Member {
 
 
 
-    //setter and getter
+    /*
+    ----------- Getter and setter -----------
+    */
     public String getName() {
         return name;
     }
