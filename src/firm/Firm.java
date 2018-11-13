@@ -9,10 +9,21 @@ public class Firm {
     /*
     ---------------------------------- Fields ----------------------------------
      */
+    String name, cvr;
 
     /*
-    ------------------------------ Constructors --------------------------------
+    ------------------------------- Constructors -------------------------------
      */
+
+    /**
+     * Primary Constructor
+     * @param cvr The CVR associated with the firm as a String
+     * @param name The name of the firm as a String
+     */
+    Firm (String cvr, String name) {
+        this.name = name;
+        this.cvr = cvr;
+    }
 
     /*
     ------------------------------ Properties ----------------------------------
