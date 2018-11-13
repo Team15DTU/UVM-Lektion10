@@ -25,6 +25,9 @@ public class FirmController {
     /*
     ---------------------------- Public Methods --------------------------------
      */
+    public void showTeamsAndCaps (String cvr) {
+
+    }
 
     /**
      * This method creates a new Firm and adds it to the
@@ -46,12 +49,8 @@ public class FirmController {
      * @return total amount of firm as an int
      */
     public int getNoOfFirms() {
-
-        // Get the size of the firmList
-        int total = firmList.getFirmList().size();
-
         // Return the amount of teams in the firmList
-        return total;
+        return firmList.getFirmList().size();
     }
 
     /*
