@@ -38,10 +38,10 @@ public class FirmController {
     public ArrayList<Integer> getTeamIDs (String cvr) {
 
         // Iterate through firmList to find the right team
-        for (Firm f : firmList.getFirmList()) {
+        for ( Firm f : firmList.getFirmList() ) {
 
             // Check if it's the correct cvr
-            if (f.getCvr().equals(cvr)) {
+            if ( f.getCvr().equals(cvr) ) {
                 // Return the list of team IDs
                 return f.getTeams();
             }
