@@ -14,6 +14,7 @@ public class Member {
     private ArrayList<Integer> adminTeams;
     private int teamID;
     private int memberNo;
+    private int firmCVR = 0;
 
     /*
     ----------- Construcktor -----------
@@ -25,6 +26,8 @@ public class Member {
         this.mail = mail;
         this.memberNo = memberNo;
         adminTeams = new ArrayList<>();
+
+
 
     }
 

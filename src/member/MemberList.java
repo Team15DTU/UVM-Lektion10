@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class MemberList {
 
 
-    ArrayList<Member> members = new ArrayList();
+    ArrayList members = new ArrayList();
 
     public void addToList(String name, String mail, int memberNo) {
 
@@ -13,9 +13,13 @@ public class MemberList {
 
     }
 
-    public Member fromList (int i) {
-        Member member = members.get(i);
-        return member;
+
+    public ArrayList getMembers() {
+        return members;
+    }
+
+    public void setMembers(ArrayList members) {
+        this.members = members;
     }
 
 

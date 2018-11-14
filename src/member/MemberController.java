@@ -4,7 +4,7 @@ public class MemberController {
 
 
     /*
-    ----------- Construcktor -----------
+    ----------- Attributes -----------
     */
     private int noOfMembers = 0;
     Member member;
