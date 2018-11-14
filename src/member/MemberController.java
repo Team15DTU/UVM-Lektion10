@@ -23,6 +23,14 @@ public class MemberController {
         setNoOfMembers(getNoOfMembers()+1);
     }
 
+    public void createMember(String name, String mail, int firmCVR) {
+
+        member = new Member(name, mail, getNoOfMembers(), firmCVR);
+        memberList.addToList(name, mail, getNoOfMembers(), firmCVR);
+
+        setNoOfMembers(getNoOfMembers()+1);
+    }
+
 
 
     /*

@@ -31,6 +31,18 @@ public class Member {
 
     }
 
+    public Member(String name, String mail, int memberNo, int firmCVR) {
+
+        this.name = name;
+        this.mail = mail;
+        this.memberNo = memberNo;
+        adminTeams = new ArrayList<>();
+        this.firmCVR = firmCVR;
+
+
+
+    }
+
 
     /*
     ----------- methods -----------

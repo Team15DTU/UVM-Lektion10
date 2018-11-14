@@ -13,6 +13,12 @@ public class MemberList {
 
     }
 
+    public void addToList(String name, String mail, int memberNo, int firmCVR) {
+
+        members.add(new Member(name, mail, memberNo, firmCVR));
+
+    }
+
 
     public ArrayList getMembers() {
         return members;

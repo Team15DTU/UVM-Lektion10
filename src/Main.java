@@ -19,7 +19,7 @@ public class Main {
         MemberList ml = new MemberList();
         ArrayList members = ml.getMembers();
 
-        Member lol = members[1];
+        Member lol = members<1>;
 
 
     }
