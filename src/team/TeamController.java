@@ -36,6 +36,18 @@ public class TeamController {
         return teamList.getTeamlist().size();
     }
 
+    public int teamsByFirm (String CVR) {
+
+        int teamsByFirmCounter=0;
+
+        for (Team t : teamList.getTeamlist()) {
+            if (t.getFirmID()==CVR) {
+                teamsByFirmCounter++;
+            }
+        }
+        return teamsByFirmCounter;
+    }
+
     public void addTeam (String teamName) {
 
         Team team = new Team(teamName);

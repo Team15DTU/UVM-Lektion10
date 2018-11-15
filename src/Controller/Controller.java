@@ -20,7 +20,11 @@ public class Controller {
     /*
     ----------------------- Constructor -------------------------
      */
-    
+
+    public Controller () {
+
+
+    }
     
     
     /*
@@ -33,12 +37,31 @@ public class Controller {
     ---------------------- Public Methods -----------------------
      */
 
+    public int totalNoOfTeams () {
+
+        int totalNoOfTeams=teamController.getNoOfTeams();
+
+        return totalNoOfTeams;
+    }
+
     public void setTeamCaptain (int memberID, int teamID) {
 
         teamController.setCaptain(memberID,teamID);
 
     }
-    
+
+    public int noOfTeamsByFirm (String firmCVR) {
+
+        int result = teamController.teamsByFirm(firmCVR);
+
+        return result;
+    }
+
+    public void creatTeam (String teamName, String firmCVR) {
+
+        teamController.addTeam(teamName,firmCVR);
+
+    }
     /*
     ---------------------- Support Methods ----------------------
      */
