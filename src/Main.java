@@ -1,5 +1,6 @@
 
 import controller.Controller;
+import view.Viewer;
 
 /**
  * @author Alfred Röttger Rydahl
@@ -10,6 +11,7 @@ public class Main {
     public static void main(String[] args) {
       
         Controller controller = new Controller();
+        Viewer viewer = new Viewer();
 
         for (int i = 0; i < 10000; i ++) {
             int teamNumber = 100 + (i % 100);
@@ -35,6 +37,9 @@ public class Main {
         controller.createFirm("200", "JYSK");
 
         System.out.println("TotalNoOfFirms: " + controller.noOfFirms());
+
+
+
 
     }
 
