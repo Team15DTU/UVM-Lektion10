@@ -2,6 +2,8 @@
 import controller.Controller;
 import view.Viewer;
 
+import java.util.Scanner;
+
 /**
  * @author Alfred Röttger Rydahl
  * @date 13-11-2018
@@ -12,7 +14,29 @@ public class Main {
       
         Controller controller = new Controller();
         Viewer viewer = new Viewer();
+        String input;
 
+        Scanner scanner = new Scanner(System.in);
+
+        do {
+            input = viewer.menu();
+            viewer.menuSwitch(input);
+
+            System.out.println();
+            System.out.println("Do you wish to go back to administation? (y?/n?)");
+            input = scanner.next();
+
+        } while (input.equals("y"));
+
+
+
+
+
+
+
+
+
+        /*
         for (int i = 0; i < 10000; i ++) {
             int teamNumber = 100 + (i % 100);
             String teamNumberStr= Integer.toString(teamNumber);
@@ -37,6 +61,7 @@ public class Main {
         controller.createFirm("200", "JYSK");
 
         System.out.println("TotalNoOfFirms: " + controller.noOfFirms());
+        */
 
 
 
