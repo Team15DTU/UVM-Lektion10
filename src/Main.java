@@ -17,7 +17,7 @@ public class Main {
         mc.createMember("jens","jens@jensen2.dk");
         mc.createMember("jens","jens@jensen3.dk");
         MemberList ml = new MemberList();
-        ArrayList members = ml.getMembers();
+        ArrayList members = ml.getMemberList();
 
         Member lol = members<1>;
 

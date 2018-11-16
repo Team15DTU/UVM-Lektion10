@@ -5,13 +5,13 @@ import java.util.ArrayList;
 public class MemberList {
 
     // -------------- Field --------------
-    ArrayList<Member> members;
+    ArrayList<Member> memberList;
 
     // -------------- Constructor ----------
 
     public MemberList () {
 
-        members = new ArrayList();
+        memberList = new ArrayList();
 
     }
 
@@ -19,24 +19,24 @@ public class MemberList {
 
     public void addToList(String name, String mail, int memberNo) {
 
-        members.add(new Member(name, mail, memberNo));
+        memberList.add(new Member(name, mail, memberNo));
 
     }
 
     public void addToList(String name, String mail, int memberNo, int firmCVR) {
 
-        members.add(new Member(name, mail, memberNo, firmCVR));
+        memberList.add(new Member(name, mail, memberNo, firmCVR));
 
     }
 
     // ------------------------ Properties -------------------------
 
-    public ArrayList<Member> getMembers() {
-        return members;
+    public ArrayList<Member> getMemberList() {
+        return memberList;
     }
 
-    public void setMembers(ArrayList<Member> members) {
-        this.members = members;
+    public void setMemberList(ArrayList<Member> memberList) {
+        this.memberList = memberList;
     }
 
 }
