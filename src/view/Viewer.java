@@ -61,7 +61,7 @@ public class Viewer {
         System.out.println("Enter member e-mail: ");
         memberMail = input.next();
 
-        control.createFirm(memberName,memberMail);
+        control.createMember(memberName,memberMail);
 
         System.out.println("Your created a member named: " + memberMail + "\nWith the e-mail: " + memberMail);
 
@@ -78,7 +78,7 @@ public class Viewer {
         System.out.println("Enter firm CVR: ");
         firmCVR = input.next();
 
-        control.createFirm(memberName,memberMail);
+        control.createMember(memberName,memberMail,firmCVR);
 
         System.out.println("Your created a member named: " + memberMail + "\nWith the e-mail: " + memberMail +
         "\nFrom firm with CVR: " + firmCVR);
