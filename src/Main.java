@@ -13,9 +13,9 @@ public class Main {
     public static void main(String[] args) {
 
         MemberController mc = new MemberController();
-        mc.createMember("jens","jens@jensen.dk");
-        mc.createMember("jens","jens@jensen2.dk");
-        mc.createMember("jens","jens@jensen3.dk");
+        mc.addMember("jens","jens@jensen.dk");
+        mc.addMember("jens","jens@jensen2.dk");
+        mc.addMember("jens","jens@jensen3.dk");
         MemberList ml = new MemberList();
         ArrayList members = ml.getMemberList();
 

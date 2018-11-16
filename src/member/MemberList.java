@@ -18,6 +18,13 @@ public class MemberList {
 
     // ----------------- Methods -----------------
 
+
+    public void addMemberToList (Member member) {
+        memberList.add(member);
+    }
+
+    /*
+
     public void addMemberToList(String name, String mail, int memberNo) {
 
         memberList.add(new Member(name, mail, memberNo));
@@ -28,7 +35,7 @@ public class MemberList {
 
         memberList.add(new Member(name, mail, memberNo, firmCVR));
 
-    }
+    } */
 
     // ------------------------ Properties -------------------------
 

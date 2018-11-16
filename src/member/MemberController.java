@@ -32,16 +32,24 @@ public class MemberController {
 
     }
 
-    public void addMember (String name, String mail, int memberNo) {
+    public void addMember (String name, String mail) {
 
-        Member member;
-        member = new Member(name,mail,memberNo);
+        member = new Member(name,mail);
+
+        memberList.addMemberToList(member);
 
     }
 
+    public void addMember (String name, String mail, String firmCVR) {
+
+        member = new Member (name, mail, firmCVR);
+
+        memberList.addMemberToList(member);
+    }
+ /*
     public void createMember(String name, String mail) {
 
-        member = new Member(name, mail, getNoOfMembers());
+        member = new Member(name, mail);
         memberList.addMemberToList(name, mail, getNoOfMembers());
 
         setNoOfMembers(getNoOfMembers()+1);
@@ -49,11 +57,12 @@ public class MemberController {
 
     public void createMember(String name, String mail, String firmCVR) {
 
-        member = new Member(name, mail, getNoOfMembers(), firmCVR);
-        memberList.addMemberToList(name, mail, getNoOfMembers(), firmCVR);
+        member = new Member(name, mail, firmCVR);
+        memberList.addMemberToList(name, mail, firmCVR);
 
         setNoOfMembers(getNoOfMembers()+1);
     }
+    */
 
     /*
     ----------- Getter and setter -----------
