@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class MemberList {
 
     // -------------- Field --------------
+
     ArrayList<Member> memberList;
 
     // -------------- Constructor ----------
@@ -17,13 +18,13 @@ public class MemberList {
 
     // ----------------- Methods -----------------
 
-    public void addToList(String name, String mail, int memberNo) {
+    public void addMemberToList(String name, String mail, int memberNo) {
 
         memberList.add(new Member(name, mail, memberNo));
 
     }
 
-    public void addToList(String name, String mail, int memberNo, int firmCVR) {
+    public void addMemberToList(String name, String mail, int memberNo, String firmCVR) {
 
         memberList.add(new Member(name, mail, memberNo, firmCVR));
 

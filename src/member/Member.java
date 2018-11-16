@@ -8,13 +8,12 @@ public class Member {
     ----------- Attributes -----------
     */
 
-
     private String name;
     private String mail;
     private ArrayList<Integer> adminTeams;
     private int teamID;
     private int memberNo;
-    private int firmCVR = 0;
+    private String firmCVR;
 
     /*
     ----------- Construcktor -----------
@@ -27,11 +26,9 @@ public class Member {
         this.memberNo = memberNo;
         adminTeams = new ArrayList<>();
 
-
-
     }
 
-    public Member(String name, String mail, int memberNo, int firmCVR) {
+    public Member(String name, String mail, int memberNo, String firmCVR) {
 
         this.name = name;
         this.mail = mail;
@@ -39,15 +36,14 @@ public class Member {
         adminTeams = new ArrayList<>();
         this.firmCVR = firmCVR;
 
-
-
     }
-
 
     /*
     ----------- methods -----------
     */
 
+
+    /*      KAN DET IKKE BARE SLETTES, SKAL VEL IKKE VÆRE HER?
     public void addAdmin(int teamID) {
         adminTeams.add(teamID);
     }
@@ -55,8 +51,7 @@ public class Member {
     public void addToTeam(int teamID) {
         this.teamID = teamID;
     }
-
-
+    */
 
     /*
     ----------- Getter and setter -----------
