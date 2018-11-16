@@ -101,16 +101,16 @@ public class Viewer {
 
     public void createFirm () {
 
-        String firnCVR, firmName;
+        String firmCVR, firmName;
         System.out.println("Create a firm");
         System.out.println("Enter firn CVR: ");
-        firnCVR = input.next();
+        firmCVR = input.next();
         System.out.println("Enter firm Name: ");
         firmName = input.next();
 
-        control.createFirm(firnCVR,firmName);
+        control.createFirm(firmCVR,firmName);
 
-        System.out.println("Your created the firm: " + firmName + "\nWith the CVR: " + firmName);
+        System.out.println("Your created the firm: " + firmName + "\nWith the CVR: " + firmCVR);
     }
     
     
