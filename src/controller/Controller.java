@@ -1,11 +1,8 @@
 package controller;
 
 import firm.FirmController;
-import member.Member;
 import member.MemberController;
 import team.TeamController;
-
-import java.util.ArrayList;
 
 /**
  * @author Rasmus Sander Larsen
