@@ -8,7 +8,7 @@ import team.TeamController;
 import java.util.ArrayList;
 
 /**
- * @auther Rasmus Sander Larsen
+ * @author Rasmus Sander Larsen
  * @date 15-11-2018
  */
 
@@ -48,54 +48,26 @@ public class Controller {
     public  void createMember (String name, String mail) {
         memberController.createMember(name,mail);
     }
-    public void createMember (String name, String mail, String firmCVR) {
-        memberController.createMember(name, mail, firmCVR);
-    }
+
+    public void createMember (String name, String mail, String firmCVR) { memberController.createMember(name, mail, firmCVR); }
 
     public void createFirm (String firmCVR, String firmName) {
         firmController.createFirm(firmCVR, firmName);
     }
 
-    public int totalNoOfTeams () {
+    public int totalNoOfTeams () { return teamController.getNoOfTeams(); }
 
-        return teamController.getNoOfTeams();
+    public void membersInTeam (int teamID) { teamController.membersInTeam(teamID); }
 
-    }
+    public void setTeamCaptain (String mail, int teamID) { teamController.setCaptain(mail,teamID); }
 
-    public void membersInTeam (int teamID) {
+    public void addMemberToTeam (String mail, int teamID) { teamController.addMemberToTeam(mail,teamID); }
 
-        teamController.membersInTeam(teamID);
+    public int noOfTeamsByFirm (String firmCVR) { return teamController.teamsByFirm(firmCVR); }
 
-    }
+    public void createTeam(String teamName, String firmCVR) { teamController.addTeam(teamName,firmCVR); }
 
-    public void setTeamCaptain (String mail, int teamID) {
-
-        teamController.setCaptain(mail,teamID);
-
-    }
-
-    public void addMemberToTeam (String mail, int teamID) {
-
-        teamController.addMemberToTeam(mail,teamID);
-
-    }
-
-    public int noOfTeamsByFirm (String firmCVR) {
-
-        return teamController.teamsByFirm(firmCVR);
-
-    }
-
-    public void createTeam(String teamName, String firmCVR) {
-
-        teamController.addTeam(teamName,firmCVR);
-
-    }
-
-    public int noOfFirms () {
-        return firmController.getNoOfFirms();
-
-    }
+    public int noOfFirms () { return firmController.getNoOfFirms(); }
     /*
     ---------------------- Support Methods ----------------------
      */

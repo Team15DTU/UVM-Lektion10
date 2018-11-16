@@ -8,8 +8,7 @@ public class Member {
     ----------- Attributes -----------
     */
 
-    private String name;
-    private String mail;
+    private String name, mail;
     private ArrayList<Integer> adminTeams;
     private int teamID;
     private int memberNo = 100000;
