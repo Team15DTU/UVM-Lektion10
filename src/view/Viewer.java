@@ -45,6 +45,7 @@ public class Viewer {
         System.out.println("2 - Create a team (from: team name and firm CVR)");
         System.out.println("3 - Create a member (from: member name, member e-mail)");
         System.out.println("4 - Create a member (from: member name, member e-mail and firm CVR)");
+        System.out.println("5 - Set a member as team captain (from: member e-mail and team ID)");
 
         selected = input.next();
 
@@ -112,8 +113,23 @@ public class Viewer {
 
         System.out.println("Your created the firm: " + firmName + "\nWith the CVR: " + firmCVR);
     }
-    
-    
+
+    public void setCaptainOnTeam () {
+
+        String memberMail;
+        int teamID;
+        System.out.println("Select a member as team captain:");
+        System.out.println("Enter members e-mail: ");
+        memberMail = input.next();
+        System.out.println("Enter teams ID: ");
+        teamID = input.nextInt();
+
+        control.setTeamCaptain(memberMail,teamID);
+
+        System.out.println("Member with e-mail: " + memberMail + ", is set as team captain for team: " + teamID);
+
+    }
+
     /*
     ---------------------- Support Methods ----------------------
      */
@@ -131,6 +147,8 @@ public class Viewer {
                 break;
             case "4":
                 createMemberNameMailCVR();
+            case "5":
+                setCaptainOnTeam();
             default:
                 break;
         }
