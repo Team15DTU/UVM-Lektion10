@@ -4,14 +4,25 @@ import java.util.ArrayList;
 
 public class MemberList {
 
+    // -------------- Field --------------
+    ArrayList<Member> members;
 
-    ArrayList members = new ArrayList();
+    // -------------- Constructor ----------
+
+    public MemberList () {
+
+        members = new ArrayList();
+
+    }
+
+    // ----------------- Methods -----------------
 
     public void addToList(String name, String mail, int memberNo) {
 
         members.add(new Member(name, mail, memberNo));
 
     }
+
 
     public void addToList(String name, String mail, int memberNo, int firmCVR) {
 
