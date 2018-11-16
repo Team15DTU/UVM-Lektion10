@@ -23,23 +23,20 @@ public class MemberList {
 
     }
 
-
     public void addToList(String name, String mail, int memberNo, int firmCVR) {
 
         members.add(new Member(name, mail, memberNo, firmCVR));
 
     }
 
+    // ------------------------ Properties -------------------------
 
-    public ArrayList getMembers() {
+    public ArrayList<Member> getMembers() {
         return members;
     }
 
-    public void setMembers(ArrayList members) {
+    public void setMembers(ArrayList<Member> members) {
         this.members = members;
     }
-
-
-
 
 }
