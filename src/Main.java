@@ -1,5 +1,5 @@
 
-import Controller.Controller;
+import controller.Controller;
 
 /**
  * @author Alfred Röttger Rydahl

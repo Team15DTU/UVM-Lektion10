@@ -34,6 +34,7 @@ public class TeamController {
 
         // Gets size of TeamList.
         return teamList.getTeamlist().size();
+
     }
 
     public int teamsByFirm (String CVR) {

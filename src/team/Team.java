@@ -13,10 +13,9 @@ public class Team {
      */
 
     private String name;
-    private int teamID;
+    private int teamID = 10000;
     private int capID;
     private String firmID;
-    private static int teamCounter = 1;
     private ArrayList<Integer> teamMembers;
     private boolean isValid = false;
 
@@ -28,31 +27,28 @@ public class Team {
     public Team (String name) {
 
         this.name=name;
-        teamID=teamCounter;
         teamMembers = new ArrayList<>();
 
-        teamCounter++;
+        teamID++;
     }
 
     public Team(String name, String firmID) {
 
         this.name=name;
-        teamID=teamCounter;
         this.firmID=firmID;
         teamMembers = new ArrayList<>();
 
-        teamCounter++;
+        teamID++;
     }
 
     public Team (String name, int capID, String firmID) {
 
         this.name=name;
-        teamID=teamCounter;
         this.capID=capID;
         this.firmID=firmID;
         teamMembers = new ArrayList<>();
 
-        teamCounter++;
+        teamID++;
     }
 
     /*

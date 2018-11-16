@@ -1,6 +1,7 @@
-package Controller;
+package controller;
 
-import team.Team;
+import firm.FirmController;
+import member.MemberController;
 import team.TeamController;
 
 /**
@@ -15,6 +16,8 @@ public class Controller {
      */
 
     TeamController teamController;
+    MemberController memberController;
+    FirmController firmController;
 
 
     /*
@@ -24,10 +27,11 @@ public class Controller {
     public Controller () {
 
         teamController = new TeamController();
+        memberController = new MemberController();
+        firmController = new FirmController();
 
     }
-    
-    
+
     /*
     ------------------------ Properties -------------------------
      */
