@@ -10,15 +10,19 @@ public class Main {
 
         Controller controller = new Controller();
 
-        controller.creatTeam("TEAM15", "123123");
-        controller.creatTeam("TeamEasyOn", "321321");
+        for (int i = 0; i < 10000; i ++) {
+            int teamNumber = 100 + (i % 100);
+            String teamNumberStr= Integer.toString(teamNumber);
+            controller.creatTeam("Team15" , teamNumberStr);
+        }
 
         int totalNoOfTeams = controller.totalNoOfTeams();
 
         System.out.println("Total number of teams: " + totalNoOfTeams);
 
-        int teamsByFirm = controller.noOfTeamsByFirm("123123");
+        int teamsByFirm = controller.noOfTeamsByFirm("100");
 
-        System.out.println("Total number of teams by firm (123123: " + teamsByFirm);
+        System.out.println("Total number of teams by firm (100): " + teamsByFirm);
+
     }
 }

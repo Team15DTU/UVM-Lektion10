@@ -41,7 +41,7 @@ public class TeamController {
         int teamsByFirmCounter=0;
 
         for (Team t : teamList.getTeamlist()) {
-            if (t.getFirmID()==CVR) {
+            if (t.getFirmID().equals(CVR)) {
                 teamsByFirmCounter++;
             }
         }
