@@ -12,29 +12,31 @@ public class Member {
     private String mail;
     private ArrayList<Integer> adminTeams;
     private int teamID;
-    private int memberNo;
+    private int memberNo = 100000;
     private String firmCVR;
 
     /*
     ----------- Construcktor -----------
     */
 
-    public Member(String name, String mail, int memberNo) {
+    public Member(String name, String mail) {
 
         this.name = name;
         this.mail = mail;
-        this.memberNo = memberNo;
         adminTeams = new ArrayList<>();
+
+        memberNo =+1;
 
     }
 
-    public Member(String name, String mail, int memberNo, String firmCVR) {
+    public Member(String name, String mail, String firmCVR) {
 
         this.name = name;
         this.mail = mail;
-        this.memberNo = memberNo;
         adminTeams = new ArrayList<>();
         this.firmCVR = firmCVR;
+
+        memberNo =+1;
 
     }
 

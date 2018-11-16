@@ -7,7 +7,7 @@ public class MemberController {
     */
     private int noOfMembers = 0;
     Member member;
-    MemberList memberList;
+    private MemberList memberList;
 
     /*
    --------------- Constructor -------------
@@ -22,6 +22,22 @@ public class MemberController {
     /*
     ----------- Methods -----------
     */
+
+    public int totalNoOfMembers () {
+        int result;
+
+        result=memberList.getMemberList().size();
+
+        return result;
+
+    }
+
+    public void addMember (String name, String mail, int memberNo) {
+
+        Member member;
+        member = new Member(name,mail,memberNo);
+
+    }
 
     public void createMember(String name, String mail) {
 
@@ -42,6 +58,15 @@ public class MemberController {
     /*
     ----------- Getter and setter -----------
      */
+
+    public MemberList getMemberList() {
+        return memberList;
+    }
+
+    public void setMemberList(MemberList memberList) {
+        this.memberList = memberList;
+    }
+
     public int getNoOfMembers() {
         return noOfMembers;
     }
