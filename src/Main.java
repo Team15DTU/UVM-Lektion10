@@ -23,16 +23,12 @@ public class Main {
             viewer.menuSwitch(input);
 
             System.out.println();
-            System.out.println("Do you wish to go back to administation? (y?/n?)");
+            System.out.println("Do you wish to go back to administration? (y?/n?)");
             input = scanner.next();
 
         } while (input.equals("y"));
 
-
-
-
-
-
+        System.out.println("See you soon.....");
 
 
 

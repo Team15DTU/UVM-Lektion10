@@ -41,10 +41,10 @@ public class Viewer {
         String selected;
         System.out.println("Welcome to administation!");
         System.out.println("You have the following options:");
-        System.out.println("1 - Create a firm (from: firm name and firm CVR");
-        System.out.println("2 - Create a team (from: team name and firm CVR");
-        System.out.println("3- Create a member (from: member name, member e-mail");
-        System.out.println("4- Create a member (from: member name, member e-mail and firm CVR");
+        System.out.println("1 - Create a firm (from: firm name and firm CVR)");
+        System.out.println("2 - Create a team (from: team name and firm CVR)");
+        System.out.println("3 - Create a member (from: member name, member e-mail)");
+        System.out.println("4 - Create a member (from: member name, member e-mail and firm CVR)");
 
         selected = input.next();
 
