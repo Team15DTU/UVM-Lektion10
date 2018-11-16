@@ -1,8 +1,5 @@
-import member.Member;
-import member.MemberController;
-import member.MemberList;
 
-import java.util.ArrayList;
+import Controller.Controller;
 
 /**
  * @author Alfred Röttger Rydahl
@@ -11,18 +8,23 @@ import java.util.ArrayList;
 public class Main {
 
     public static void main(String[] args) {
+      
+        Controller controller = new Controller();
 
-        MemberController mc = new MemberController();
-        mc.addMember("jens","jens@jensen.dk");
-        mc.addMember("jens","jens@jensen2.dk");
-        mc.addMember("jens","jens@jensen3.dk");
-        MemberList ml = new MemberList();
-        ArrayList members = ml.getMemberList();
+        for (int i = 0; i < 10000; i ++) {
+            int teamNumber = 100 + (i % 100);
+            String teamNumberStr= Integer.toString(teamNumber);
+            controller.createTeam("Team15" , teamNumberStr);
+        }
 
-        Member lol = members<1>;
+        int totalNoOfTeams = controller.totalNoOfTeams();
 
+        System.out.println("Total number of teams: " + totalNoOfTeams);
+
+        int teamsByFirm = controller.noOfTeamsByFirm("100");
+
+        System.out.println("Total number of teams by firm (100): " + teamsByFirm);
 
     }
-
 
 }

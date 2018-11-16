@@ -31,6 +31,8 @@ public class TeamList {
     public ArrayList<Team> getTeamlist() {
         return teamlist;
     }
+
+
     
     /*
     ---------------------- Public Methods -----------------------
