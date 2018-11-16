@@ -13,7 +13,7 @@ public class Main {
         for (int i = 0; i < 10000; i ++) {
             int teamNumber = 100 + (i % 100);
             String teamNumberStr= Integer.toString(teamNumber);
-            controller.creatTeam("Team15" , teamNumberStr);
+            controller.createTeam("Team15" , teamNumberStr);
         }
 
         int totalNoOfTeams = controller.totalNoOfTeams();

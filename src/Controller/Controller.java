@@ -14,7 +14,7 @@ public class Controller {
     -------------------------- Fields --------------------------
      */
 
-    TeamController teamController = new TeamController();
+    TeamController teamController;
 
 
     /*
@@ -23,6 +23,7 @@ public class Controller {
 
     public Controller () {
 
+        teamController = new TeamController();
 
     }
     
@@ -57,7 +58,7 @@ public class Controller {
         return result;
     }
 
-    public void creatTeam (String teamName, String firmCVR) {
+    public void createTeam(String teamName, String firmCVR) {
 
         teamController.addTeam(teamName,firmCVR);
 
