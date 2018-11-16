@@ -14,9 +14,9 @@ public class Team {
 
     private String name;
     private int teamID = 10000;
-    private int capID;
+    private String capID;
     private String firmID;
-    private ArrayList<Integer> teamMembers;
+    private ArrayList<String> teamMembers;
     private boolean isValid = false;
 
 
@@ -41,7 +41,7 @@ public class Team {
         teamID++;
     }
 
-    public Team (String name, int capID, String firmID) {
+    public Team (String name, String capID, String firmID) {
 
         this.name=name;
         this.capID=capID;
@@ -71,11 +71,11 @@ public class Team {
         this.teamID = teamID;
     }
 
-    public int getCapID() {
+    public String getCapID() {
         return capID;
     }
 
-    public void setCapID(int capID) {
+    public void setCapID(String capID) {
         this.capID = capID;
     }
 
@@ -87,11 +87,11 @@ public class Team {
         this.firmID = firmID;
     }
 
-    public ArrayList<Integer> getTeamMembers() {
+    public ArrayList<String> getTeamMembers() {
         return teamMembers;
     }
 
-    public void setTeamMembers(ArrayList<Integer> teamMembers) {
+    public void setTeamMembers(ArrayList<String> teamMembers) {
         this.teamMembers = teamMembers;
     }
 
@@ -108,15 +108,13 @@ public class Team {
     ---------------------- Public Methods -----------------------
      */
 
-    public void addMemberToTeam (int memberID) {
+    public void addMemberToTeam (String mail) {
 
-        teamMembers.add(memberID);
+        teamMembers.add(mail);
     }
 
     /*
     ---------------------- Support Methods ----------------------
      */
-
-
 
 }

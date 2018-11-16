@@ -1,8 +1,11 @@
 package controller;
 
 import firm.FirmController;
+import member.Member;
 import member.MemberController;
 import team.TeamController;
+
+import java.util.ArrayList;
 
 /**
  * @auther Rasmus Sander Larsen
@@ -42,29 +45,55 @@ public class Controller {
     ---------------------- Public Methods -----------------------
      */
 
-    public int totalNoOfTeams () {
-
-        int totalNoOfTeams=teamController.getNoOfTeams();
-
-        return totalNoOfTeams;
+    public  void createMember (String name, String mail) {
+        memberController.createMember(name,mail);
+    }
+    public void createMember (String name, String mail, String firmCVR) {
+        memberController.createMember(name, mail, firmCVR);
     }
 
-    public void setTeamCaptain (int memberID, int teamID) {
+    public void createFirm (String firmCVR, String firmName) {
+        firmController.createFirm(firmCVR, firmName);
+    }
 
-        teamController.setCaptain(memberID,teamID);
+    public int totalNoOfTeams () {
+
+        return teamController.getNoOfTeams();
+
+    }
+
+    public void membersInTeam (int teamID) {
+
+        teamController.membersInTeam(teamID);
+
+    }
+
+    public void setTeamCaptain (String mail, int teamID) {
+
+        teamController.setCaptain(mail,teamID);
+
+    }
+
+    public void addMemberToTeam (String mail, int teamID) {
+
+        teamController.addMemberToTeam(mail,teamID);
 
     }
 
     public int noOfTeamsByFirm (String firmCVR) {
 
-        int result = teamController.teamsByFirm(firmCVR);
+        return teamController.teamsByFirm(firmCVR);
 
-        return result;
     }
 
     public void createTeam(String teamName, String firmCVR) {
 
         teamController.addTeam(teamName,firmCVR);
+
+    }
+
+    public int noOfFirms () {
+        return firmController.getNoOfFirms();
 
     }
     /*

@@ -23,6 +23,19 @@ public class MemberController {
     ----------- Methods -----------
     */
 
+    public String nameOnMember (String mail) {
+        String name=null;
+
+        for (Member m : memberList.getMemberList()) {
+
+            if (m.getMail().equals(mail)) {
+                name = m.getName();
+            }
+        }
+
+        return name;
+    }
+
     public int totalNoOfMembers () {
         int result;
 
@@ -32,7 +45,7 @@ public class MemberController {
 
     }
 
-    public void addMember (String name, String mail) {
+    public void createMember(String name, String mail) {
 
         member = new Member(name,mail);
 
@@ -40,29 +53,13 @@ public class MemberController {
 
     }
 
-    public void addMember (String name, String mail, String firmCVR) {
+    public void createMember(String name, String mail, String firmCVR) {
 
         member = new Member (name, mail, firmCVR);
 
         memberList.addMemberToList(member);
     }
- /*
-    public void createMember(String name, String mail) {
 
-        member = new Member(name, mail);
-        memberList.addMemberToList(name, mail, getNoOfMembers());
-
-        setNoOfMembers(getNoOfMembers()+1);
-    }
-
-    public void createMember(String name, String mail, String firmCVR) {
-
-        member = new Member(name, mail, firmCVR);
-        memberList.addMemberToList(name, mail, firmCVR);
-
-        setNoOfMembers(getNoOfMembers()+1);
-    }
-    */
 
     /*
     ----------- Getter and setter -----------

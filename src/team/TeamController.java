@@ -1,7 +1,7 @@
 package team;
 
 /**
- * @auther Rasmus Sander Larsen
+ * @author Rasmus Sander Larsen
  * @date 13-11-2018
  */
 public class TeamController {
@@ -65,7 +65,7 @@ public class TeamController {
 
     }
 
-    public void addTeam (String teamName, int captainMemberID, String CVR) {
+    public void addTeam (String teamName, String captainMemberID, String CVR) {
 
         Team team = new Team(teamName,captainMemberID,CVR);
 
@@ -73,24 +73,34 @@ public class TeamController {
 
     }
 
-    public void setCaptain (int memberID, int teamID) {
+    public void setCaptain (String mail, int teamID) {
 
         for( Team t: teamList.getTeamlist()) {
 
 
             if (t.getTeamID() == teamID) {
-                t.setCapID(memberID);
+                t.setCapID(mail);
                 break;
             }
         }
 
     }
 
-    public void addMemberToTeam (int memberID, int teamID) {
+    public void membersInTeam (int teamID) {
+        for (Team t: teamList.getTeamlist()) {
+
+            if (t.getTeamID()== teamID) {
+                System.out.println(t.getTeamMembers());
+                break;
+            }
+        }
+    }
+
+    public void addMemberToTeam (String mail, int teamID) {
         for (Team t: teamList.getTeamlist()) {
 
             if (t.getTeamID() == (teamID)) {
-                t.addMemberToTeam(memberID);
+                t.addMemberToTeam(mail);
             }
         }
     }
