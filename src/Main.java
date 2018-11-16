@@ -1,3 +1,4 @@
+
 import Controller.Controller;
 
 /**
@@ -7,7 +8,7 @@ import Controller.Controller;
 public class Main {
 
     public static void main(String[] args) {
-
+      
         Controller controller = new Controller();
 
         for (int i = 0; i < 10000; i ++) {
@@ -25,4 +26,5 @@ public class Main {
         System.out.println("Total number of teams by firm (100): " + teamsByFirm);
 
     }
+
 }
