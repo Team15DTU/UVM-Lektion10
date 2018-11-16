@@ -94,7 +94,7 @@ public class Viewer {
         System.out.println("Enter firm CVR: ");
         firmCVR = input.next();
 
-        control.createFirm(teamName,firmCVR);
+        control.createTeam(teamName,firmCVR);
 
         System.out.println("Your created the team: " + teamName + "\nWith the CVR: " + firmCVR);
     }
